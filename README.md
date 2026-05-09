@@ -1,51 +1,51 @@
 # Bösger Digital – Brand Colors
 
-Eine interaktive Brand-Identity-Seite für **Bösger Digital**, erreichbar unter [colors.boesger.com](https://colors.boesger.com).
+An interactive brand identity reference page for **Bösger Digital**, available at [colors.boesger.com](https://colors.boesger.com).
 
-## Inhalt
+## Contents
 
-Die Seite dokumentiert die visuelle Identität von Bösger Digital und enthält:
+The page documents the visual identity of Bösger Digital and includes:
 
-- **Farbpalette** – Alle Brand-Farben mit HEX-Werten, klickbar zum Kopieren in die Zwischenablage
-- **Hintergründe** – Abgestufte Hintergrundfarben von Deep bis Elevated
-- **Akzentfarben** – Primäre Cyan-Akzente und deren Varianten
-- **Typografie** – Schriftfamilien und -größen
-- **Assets** – Logos und weitere Markenmaterialien zum Download
+- **Color palette** – All brand colors with HEX values, click to copy to clipboard
+- **Backgrounds** – Layered background colors from Deep to Elevated
+- **Accent colors** – Primary cyan accents and their variants
+- **Typography** – Font families and sizes
+- **Assets** – Logos and other brand materials available for download
 
-## Farbpalette
+## Color Palette
 
-| Token | HEX | Verwendung |
+| Token | HEX | Usage |
 |---|---|---|
-| `--bg-deep` | `#000D1C` | Tiefstes Hintergrundlevel |
-| `--bg-base` | `#001222` | Basishintergrund |
-| `--bg-surface` | `#062237` | Kartenoberflächen |
-| `--bg-elevated` | `#124061` | Erhöhte Elemente |
-| `--accent` | `#01BFFB` | Primärfarbe / CTA |
-| `--accent-light` | `#6BDFF1` | Heller Akzent |
-| `--accent-deep` | `#058FC1` | Dunklerer Akzent |
-| `--accent-muted` | `#336D91` | Gedämpfter Akzent / Labels |
-| `--text-primary` | `#FFFFFF` | Primärer Text |
-| `--text-body` | `#C0F6FC` | Fließtext |
-| `--text-muted` | `#336D91` | Sekundärer Text |
+| `--bg-deep` | `#000D1C` | Deepest background level |
+| `--bg-base` | `#001222` | Base background |
+| `--bg-surface` | `#062237` | Card surfaces |
+| `--bg-elevated` | `#124061` | Elevated elements |
+| `--accent` | `#01BFFB` | Primary color / CTA |
+| `--accent-light` | `#6BDFF1` | Light accent |
+| `--accent-deep` | `#058FC1` | Dark accent |
+| `--accent-muted` | `#336D91` | Muted accent / labels |
+| `--text-primary` | `#FFFFFF` | Primary text |
+| `--text-body` | `#C0F6FC` | Body text |
+| `--text-muted` | `#336D91` | Secondary text |
 
-## Nutzung
+## Usage
 
-Die gesamte Seite besteht aus einer einzigen `index.html`-Datei – kein Build-Prozess, keine Abhängigkeiten.
+The entire page is a single `index.html` file – no build process, no dependencies.
 
 ```bash
-# Lokal öffnen
+# Open locally
 open index.html
 
-# Oder mit einem einfachen HTTP-Server
+# Or with a simple HTTP server
 npx serve .
 ```
 
 ## Deployment
 
-Die Seite wird über **GitHub Pages** bereitgestellt. Der CNAME `colors.boesger.com` ist in der Datei `CNAME` konfiguriert.
+The page is hosted via **GitHub Pages**. The CNAME `colors.boesger.com` is configured in the `CNAME` file.
 
-Änderungen am `main`-Branch werden automatisch veröffentlicht.
+Changes pushed to the `main` branch are published automatically.
 
-## Lizenz
+## License
 
-© Bösger Digital. Alle Rechte vorbehalten.
+© Bösger Digital. All rights reserved.
