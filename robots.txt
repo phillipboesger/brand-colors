@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# AI agent discovery
+# See /llms.txt for a human- and machine-readable summary of this site's content.
+Sitemap: https://colors.boesger.com/sitemap.xml
