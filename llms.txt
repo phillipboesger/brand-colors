@@ -1,0 +1,110 @@
+# Bösger Digital – Brand Identity
+
+> Official brand color palette, logo assets and CSS design tokens for Bösger Digital, a digital agency. This page is the single source of truth for all brand colors and visual identity elements. Available at https://colors.boesger.com.
+
+## About Bösger Digital
+
+Bösger Digital is a digital agency. The brand identity is built on a deep navy color base with bright cyan accents, communicating professionalism, technical precision, and a modern digital aesthetic.
+
+- Website: https://boesger.com
+- Brand colors page: https://colors.boesger.com
+- Contact: digital@boesger.com
+
+---
+
+## Color System
+
+All colors are defined as CSS custom properties in `:root`.
+
+### Background Colors
+
+| Name | HEX | RGB | CSS Token | Usage |
+|---|---|---|---|---|
+| Deep Navy | `#000D1C` | rgb(0, 13, 28) | `--bg-deep` | Page background, deepest level |
+| Dark Navy | `#001222` | rgb(0, 18, 34) | `--bg-base` | Sections and areas |
+| Surface Navy | `#062237` | rgb(6, 34, 55) | `--bg-surface` | Cards and panels |
+| Elevated | `#124061` | rgb(18, 64, 97) | `--bg-elevated` | Hover states, borders, dividers |
+
+### Accent Colors – Brand Cyan
+
+| Name | HEX | RGB | CSS Token | Usage |
+|---|---|---|---|---|
+| Cyan Primary | `#01BFFB` | rgb(1, 191, 251) | `--accent` | Logo, CTAs, links, icons |
+| Cyan Light | `#6BDFF1` | rgb(107, 223, 241) | `--accent-light` | Hover, glow, highlights |
+| Cyan Deep | `#058FC1` | rgb(5, 143, 193) | `--accent-deep` | Active states, gradient end |
+| Cyan Muted | `#336D91` | rgb(51, 109, 145) | `--accent-muted` | Disabled, subtle UI |
+| Cyan Tint | `rgba(1,191,251,0.12)` | — | `--accent-tint` | Tinted backgrounds, badges |
+
+### Typography Colors
+
+| Name | HEX | RGB | CSS Token | Usage |
+|---|---|---|---|---|
+| White | `#FFFFFF` | rgb(255, 255, 255) | `--text-primary` | Headings H1–H3 |
+| Ice Blue | `#C0F6FC` | rgb(192, 246, 252) | `--text-body` | Body text, subheadings |
+| Muted Blue | `#336D91` | rgb(51, 109, 145) | `--text-muted` | Placeholders, labels, meta |
+
+---
+
+## CSS Custom Properties (Copy-paste ready)
+
+```css
+:root {
+  /* ── Backgrounds ── */
+  --bg-deep:      #000D1C;  /* Page background */
+  --bg-base:      #001222;  /* Sections */
+  --bg-surface:   #062237;  /* Cards, panels */
+  --bg-elevated:  #124061;  /* Hover, borders */
+
+  /* ── Accent – Cyan ── */
+  --accent:       #01BFFB;  /* Primary brand cyan */
+  --accent-light: #6BDFF1;  /* Glow, highlights */
+  --accent-deep:  #058FC1;  /* Active, gradient */
+  --accent-muted: #336D91;  /* Disabled, subtle */
+  --accent-tint:  rgba(1,191,251,0.12);
+
+  /* ── Typography ── */
+  --text-primary: #FFFFFF;  /* Headings */
+  --text-body:    #C0F6FC;  /* Body, subheadings */
+  --text-muted:   #336D91;  /* Placeholder, meta */
+}
+```
+
+---
+
+## Typography & Font Stack
+
+- **Body font**: `-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif`
+- **Monospace**: `'SF Mono', 'Fira Code', 'Courier New', monospace`
+
+---
+
+## Logo & Icon Assets
+
+All logo assets are embedded as base64-encoded PNG files in the single-file HTML page.
+
+| Asset | Format | Background | Usage |
+|---|---|---|---|
+| Logo · Cyan | PNG | Dark (Deep Navy) | Full wordmark, primary use |
+| Logo · Light BG | PNG | Light (#eef2f7) | Full wordmark on light backgrounds |
+| Icon · Cyan | PNG | Dark (Deep Navy) | Brand mark / favicon use |
+| Icon · White | PNG | Dark (Deep Navy) | Brand mark in white |
+| Icon · Black | PNG | Light (#eef2f7) | Brand mark in black |
+| Icon · on Cyan | PNG | Cyan (#01BFFB) | Brand mark on brand color |
+
+---
+
+## Usage Patterns
+
+- **Primary Button**: background `#01BFFB`, text `#000D1C`
+- **Outline Button**: transparent background, `#01BFFB` border and text
+- **Card / Panel**: background `#062237`, text `#C0F6FC`, border `#124061`
+- **Tinted Badge**: background `rgba(1,191,251,0.12)`, text `#01BFFB`
+- **Muted Label**: text `#336D91`
+
+---
+
+## Technical Notes
+
+- The entire brand identity page is a **single `index.html` file** – no build process, no external dependencies.
+- Hosted via **GitHub Pages** at `colors.boesger.com`.
+- All images are base64-encoded inline to ensure zero external requests.
