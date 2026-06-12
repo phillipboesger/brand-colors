@@ -80,16 +80,17 @@ All colors are defined as CSS custom properties in `:root`.
 
 ## Logo & Icon Assets
 
-All logo assets are embedded as base64-encoded PNG files in the single-file HTML page.
+All logo, icon and background assets are individual image files in the `/assets/` folder and are referenced directly from the page.
 
-| Asset | Format | Background | Usage |
+| Asset | File | Format | Usage |
 |---|---|---|---|
-| Logo · Cyan | PNG | Dark (Deep Navy) | Full wordmark, primary use |
-| Logo · Light BG | PNG | Light (#eef2f7) | Full wordmark on light backgrounds |
-| Icon · Cyan | PNG | Dark (Deep Navy) | Brand mark / favicon use |
-| Icon · White | PNG | Dark (Deep Navy) | Brand mark in white |
-| Icon · Black | PNG | Light (#eef2f7) | Brand mark in black |
-| Icon · on Cyan | PNG | Cyan (#01BFFB) | Brand mark on brand color |
+| Logo · Cyan | `/assets/logo-cyan.png` | PNG (600×600) | Full wordmark, primary use (also favicon) |
+| Logo · Light BG | `/assets/logo-cyan.png` | PNG (600×600) | Full wordmark shown on light backgrounds |
+| Icon · Cyan | `/assets/icon-cyan.png` | PNG (400×400) | Brand mark in cyan |
+| Icon · White | `/assets/icon-white.png` | PNG (400×400) | Brand mark in white |
+| Icon · Black | `/assets/icon-black.png` | PNG (400×400) | Brand mark in black |
+| Icon · on Cyan | `/assets/icon-black.png` | PNG (400×400) | Brand mark on cyan background |
+| Background | `/assets/background.jpg` | JPEG (1200×800) | Hero / brand background image |
 
 ---
 
@@ -105,6 +106,6 @@ All logo assets are embedded as base64-encoded PNG files in the single-file HTML
 
 ## Technical Notes
 
-- The entire brand identity page is a **single `index.html` file** – no build process, no external dependencies.
+- The brand identity page is a static `index.html` file with images in the `/assets/` folder – no build process, no external dependencies.
 - Hosted via **GitHub Pages** at `colors.boesger.com`.
-- All images are base64-encoded inline to ensure zero external requests.
+- All color values are present as static HTML (visible text, `data-*` attributes, JSON-LD `ItemList`, and a `#brand-colors-data` JSON island). **No JavaScript is required to read the colors** – JS only powers click-to-copy.
