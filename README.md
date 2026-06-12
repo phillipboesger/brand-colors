@@ -30,14 +30,14 @@ The page documents the visual identity of Bösger Digital and includes:
 
 ## Usage
 
-The entire page is a single `index.html` file – no build process, no dependencies.
+The page is a static `index.html` file plus an `assets/` folder containing the logo, icon and background images – no build process, no dependencies. All color values live directly in the HTML (visible text, `data-*` attributes, JSON-LD and a JSON data island), so no JavaScript is required to read them – JS only powers the click-to-copy interactions.
 
 ```bash
-# Open locally
-open index.html
-
-# Or with a simple HTTP server
+# Serve locally (recommended – the click-to-copy-image feature needs HTTP)
 npx serve .
+
+# Or just open the file to view it
+open index.html
 ```
 
 ## Deployment
